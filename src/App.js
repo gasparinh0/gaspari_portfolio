@@ -1,25 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
 
+/* Imports do React */
+import React, { useState, useEffect } from 'react';
+
+//IMPORTS DAS PÁGINAS
+import HomePage from './componentsWeb/homepage'
+import HomepageMobile from './componentsMobile/HomepageMobile'
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    //CÓDIGO PARA DETECTAR SE É MOBILE
+    const [isMobile, setIsMobile] = useState(window.matchMedia('(max-width: 768px)').matches);
+
+    useEffect(() => {
+      const mediaQuery = window.matchMedia('(max-width: 768px)');
+      
+      const handleResize = (e) => {
+        setIsMobile(e.matches);
+      };
+
+      mediaQuery.addListener(handleResize);
+
+      return () => {
+        mediaQuery.removeListener(handleResize);
+      };
+    }, []);
+
+    return (
+      <div>
+      {isMobile ? <HomepageMobile /> : <HomePage />}
+      </div>
+    );
 }
 
 export default App;
