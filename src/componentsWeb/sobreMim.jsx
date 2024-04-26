@@ -177,7 +177,7 @@ function src() {
           <div className='group relative rounded-full p-2 transition duration-300 hover:bg-[#303236]'>
             <SiFigma size={40} color='#ffffff' className='transition-opacity duration-300 group-hover:opacity-0' />
             <p className='absolute inset-0 flex items-center justify-center text-white font-semibold opacity-0 group-hover:opacity-100'>
-              60%
+              70%
             </p>
           </div>
           <p className='text-[#c1cccc] font-light'>Figma</p>
