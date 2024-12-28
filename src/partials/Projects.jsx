@@ -186,7 +186,7 @@ function src() {
 
       <Card sx={{ maxWidth: 345, backgroundColor: '#303236', color: 'white' }}>
         <CardActionArea>
-          <a href='https://github.com/gasparinh0/dating-counter' target='_blank' rel="noreferrer">
+          <a href='https://github.com/gasparinh0/central-pagamentos' target='_blank' rel="noreferrer">
             <CardMedia
               component="img"
               height="140"
@@ -211,7 +211,7 @@ function src() {
 
       <Card sx={{ maxWidth: 345, backgroundColor: '#303236', color: 'white' }}>
         <CardActionArea>
-          <a href='https://github.com/gasparinh0/dating-counter' target='_blank' rel="noreferrer">
+          <a href='https://www.figma.com/design/Y9856k82c59EIb1ZwrZRHU/Esquematiza%C3%A7%C3%A3o-de-app---Umidify-Companion?t=vSpXdssMhRnaKuSh-1' target='_blank' rel="noreferrer">
             <CardMedia
               component="img"
               height="140"
