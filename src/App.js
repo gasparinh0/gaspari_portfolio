@@ -4,8 +4,8 @@ import './App.css';
 import React, { useState, useEffect } from 'react';
 
 //IMPORTS DAS PÁGINAS
-import HomePage from './componentsWeb/homepage'
-import HomepageMobile from './componentsMobile/HomepageMobile'
+import HomePage from './components/componentsWeb/homepage'
+import HomepageMobile from './components/componentsMobile/homepageMobile'
 
 function App() {
 
